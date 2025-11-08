@@ -1,7 +1,27 @@
 import { Mail, Phone, MapPin, Building2 } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 
+const sanitizePhoneNumber = (value: string | undefined) =>
+  value?.replace(/[^0-9+]/g, "") ?? "";
+
 export function Contact() {
+  const companyName = import.meta.env.VITE_COMPANY_NAME || "Mi Empresa";
+  const companyTagline =
+    import.meta.env.VITE_COMPANY_TAGLINE ||
+    "Tu socio de confianza en soluciones profesionales";
+  const companyEmail =
+    import.meta.env.VITE_COMPANY_EMAIL || "contacto@miempresa.com";
+  const companyPhoneDisplay =
+    import.meta.env.VITE_COMPANY_PHONE || "+1 (234) 567-890";
+  const companyPhoneHref =
+    sanitizePhoneNumber(import.meta.env.VITE_COMPANY_PHONE) || "1234567890";
+  const addressLine1 =
+    import.meta.env.VITE_COMPANY_ADDRESS_LINE1 || "Calle Principal 123";
+  const addressLine2 =
+    import.meta.env.VITE_COMPANY_ADDRESS_LINE2 || "Ciudad, Estado 12345";
+  const googleMapsEmbedUrl =
+    import.meta.env.VITE_GOOGLE_MAPS_EMBED_URL ||
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373631531654!3d-37.817209979751554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sau!4v1614311735829!5m2!1sen!2sau";
   return (
     <section id="contacto" className="py-20 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -21,10 +41,8 @@ export function Contact() {
               </div>
               
               <div className="text-center mb-8">
-                <h3 className="mb-2">Mi Empresa</h3>
-                <p className="text-gray-600">
-                  Tu socio de confianza en soluciones profesionales
-                </p>
+                <h3 className="mb-2">{companyName}</h3>
+                <p className="text-gray-600">{companyTagline}</p>
               </div>
 
               <div className="space-y-6">
@@ -35,11 +53,11 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-gray-500 text-sm">Email</p>
-                    <a 
-                      href="mailto:contacto@miempresa.com" 
+                    <a
+                      href={`mailto:${companyEmail}`}
                       className="text-blue-600 hover:underline"
                     >
-                      contacto@miempresa.com
+                      {companyEmail}
                     </a>
                   </div>
                 </div>
@@ -51,11 +69,11 @@ export function Contact() {
                   </div>
                   <div>
                     <p className="text-gray-500 text-sm">Teléfono</p>
-                    <a 
-                      href="tel:+1234567890" 
+                    <a
+                      href={`tel:${companyPhoneHref}`}
                       className="text-blue-600 hover:underline"
                     >
-                      +1 (234) 567-890
+                      {companyPhoneDisplay}
                     </a>
                   </div>
                 </div>
@@ -68,8 +86,9 @@ export function Contact() {
                   <div>
                     <p className="text-gray-500 text-sm">Dirección</p>
                     <p className="text-gray-900">
-                      Calle Principal 123<br />
-                      Ciudad, Estado 12345
+                      {addressLine1}
+                      <br />
+                      {addressLine2}
                     </p>
                   </div>
                 </div>
@@ -81,7 +100,7 @@ export function Contact() {
           <Card className="overflow-hidden">
             <CardContent className="p-0 h-full">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373631531654!3d-37.817209979751554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sau!4v1614311735829!5m2!1sen!2sau"
+                src={googleMapsEmbedUrl}
                 width="100%"
                 height="100%"
                 style={{ border: 0, minHeight: '400px' }}
@@ -89,12 +108,7 @@ export function Contact() {
                 loading="lazy"
                 title="Ubicación de la empresa"
               ></iframe>
-              {/* Para personalizar el mapa, reemplaza el src con tu propia dirección.
-                  Obtén el código embed desde Google Maps:
-                  1. Busca tu dirección en Google Maps
-                  2. Haz clic en "Compartir"
-                  3. Selecciona "Insertar un mapa"
-                  4. Copia el código y reemplaza el src del iframe */}
+              {/* Para personalizar el mapa, actualiza VITE_GOOGLE_MAPS_EMBED_URL en tu archivo .env. */}
             </CardContent>
           </Card>
         </div>
