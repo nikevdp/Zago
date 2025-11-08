@@ -2,12 +2,22 @@ import { Button } from "./ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
+const sanitizePhoneNumber = (value: string | undefined) =>
+  value?.replace(/[^0-9]/g, "") ?? "";
+
 export function Hero() {
+  const whatsappNumber =
+    sanitizePhoneNumber(import.meta.env.VITE_WHATSAPP_PHONE) || "1234567890";
+  const whatsappMessage =
+    import.meta.env.VITE_WHATSAPP_MESSAGE ||
+    "Hola, me gustaría obtener más información";
+
   const handleWhatsAppClick = () => {
-    // Reemplaza con tu número de WhatsApp (formato internacional sin +)
-    const phoneNumber = "1234567890";
-    const message = "Hola, me gustaría obtener más información";
-    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+    if (!whatsappNumber) return;
+    window.open(
+      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`,
+      "_blank"
+    );
   };
 
   const scrollToProducts = () => {
