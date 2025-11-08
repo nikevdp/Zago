@@ -1,0 +1,104 @@
+import { Mail, Phone, MapPin, Building2 } from "lucide-react";
+import { Card, CardContent } from "./ui/card";
+
+export function Contact() {
+  return (
+    <section id="contacto" className="py-20 px-4 bg-gray-50">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-center mb-12">
+          Contacto
+        </h2>
+        
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Información de contacto */}
+          <Card>
+            <CardContent className="p-8">
+              {/* Logo */}
+              <div className="flex items-center justify-center mb-8">
+                <div className="bg-blue-600 text-white p-6 rounded-full">
+                  <Building2 className="w-12 h-12" />
+                </div>
+              </div>
+              
+              <div className="text-center mb-8">
+                <h3 className="mb-2">Mi Empresa</h3>
+                <p className="text-gray-600">
+                  Tu socio de confianza en soluciones profesionales
+                </p>
+              </div>
+
+              <div className="space-y-6">
+                {/* Email */}
+                <div className="flex items-start gap-4">
+                  <div className="bg-blue-100 p-3 rounded-lg">
+                    <Mail className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <p className="text-gray-500 text-sm">Email</p>
+                    <a 
+                      href="mailto:contacto@miempresa.com" 
+                      className="text-blue-600 hover:underline"
+                    >
+                      contacto@miempresa.com
+                    </a>
+                  </div>
+                </div>
+
+                {/* Teléfono */}
+                <div className="flex items-start gap-4">
+                  <div className="bg-blue-100 p-3 rounded-lg">
+                    <Phone className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <p className="text-gray-500 text-sm">Teléfono</p>
+                    <a 
+                      href="tel:+1234567890" 
+                      className="text-blue-600 hover:underline"
+                    >
+                      +1 (234) 567-890
+                    </a>
+                  </div>
+                </div>
+
+                {/* Dirección */}
+                <div className="flex items-start gap-4">
+                  <div className="bg-blue-100 p-3 rounded-lg">
+                    <MapPin className="w-6 h-6 text-blue-600" />
+                  </div>
+                  <div>
+                    <p className="text-gray-500 text-sm">Dirección</p>
+                    <p className="text-gray-900">
+                      Calle Principal 123<br />
+                      Ciudad, Estado 12345
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </CardContent>
+          </Card>
+
+          {/* Mapa de Google */}
+          <Card className="overflow-hidden">
+            <CardContent className="p-0 h-full">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373631531654!3d-37.817209979751554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sau!4v1614311735829!5m2!1sen!2sau"
+                width="100%"
+                height="100%"
+                style={{ border: 0, minHeight: '400px' }}
+                allowFullScreen
+                loading="lazy"
+                title="Ubicación de la empresa"
+              ></iframe>
+              {/* Para personalizar el mapa, reemplaza el src con tu propia dirección.
+                  Obtén el código embed desde Google Maps:
+                  1. Busca tu dirección en Google Maps
+                  2. Haz clic en "Compartir"
+                  3. Selecciona "Insertar un mapa"
+                  4. Copia el código y reemplaza el src del iframe */}
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </section>
+  );
+}
