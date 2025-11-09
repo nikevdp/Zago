@@ -19,7 +19,5 @@ Este proyecto usa variables de entorno expuestas al cliente mediante `import.met
 | `VITE_COMPANY_ADDRESS_LINE1` | Primera línea de la dirección en la tarjeta de contacto | Completa con calle y número. |
 | `VITE_COMPANY_ADDRESS_LINE2` | Segunda línea de la dirección en la tarjeta de contacto | Completa con ciudad, estado/provincia y código postal. |
 | `VITE_GOOGLE_MAPS_EMBED_URL` | URL del iframe que muestra el mapa de tu ubicación | 1) Busca tu empresa en [Google Maps](https://maps.google.com). 2) Haz clic en **Compartir** → **Insertar un mapa**. 3) Copia el código HTML y extrae el valor del atributo `src` del `<iframe>`. |
-| `VITE_GOOGLE_PLACES_API_KEY` | Solicitar reseñas reales de Google en la sección de clientes | Crea una clave en [Google Cloud Console](https://console.cloud.google.com/). Activa la **Places API** y restringe la clave para uso en tus dominios. |
-| `VITE_GOOGLE_PLACE_ID` | Identificador del local para recuperar sus reseñas | Abre [Google Maps Place ID Finder](https://developers.google.com/maps/documentation/places/web-service/place-id). Busca tu negocio y copia el valor de `place_id`. |
 
 > ℹ️ Recordá no subir tus archivos `.env` reales al repositorio.
