@@ -1,5 +1,6 @@
 import { Building2 } from "lucide-react";
 import { useState, useEffect } from "react";
+import { envConfig } from "../config/env";
 
 const navItems = [
   { name: "Inicio", href: "#inicio" },
@@ -38,7 +39,7 @@ export function Header() {
     const id = href.replace("#", "");
     const element = document.getElementById(id);
     if (element) {
-      const offset = 80; // Altura del header
+      const offset = 50; // Altura del header
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
 
@@ -62,7 +63,9 @@ export function Header() {
             <div className="bg-blue-600 text-white p-2 rounded-lg">
               <Building2 className="w-6 h-6" />
             </div>
-            <span className="text-gray-900">Mi Empresa</span>
+            <span className="text-gray-900">
+              {envConfig.company.name || "Mi Empresa"}
+            </span>
           </div>
 
           {/* Navegación */}
