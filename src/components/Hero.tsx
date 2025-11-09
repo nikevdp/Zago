@@ -3,18 +3,22 @@ import { MessageCircle, ChevronDown } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { envConfig } from "../config/env";
 
+const sanitizePhoneNumber = (value: string | undefined) =>
+  value?.replace(/[^0-9]/g, "") ?? "";
+
 export function Hero() {
-  const { number: whatsappNumber, message: whatsappMessage } = envConfig.whatsapp;
-  const hasWhatsappConfig = Boolean(whatsappNumber);
+  const whatsappNumber =
+    sanitizePhoneNumber(import.meta.env.VITE_WHATSAPP_PHONE) || "1234567890";
+  const whatsappMessage =
+    import.meta.env.VITE_WHATSAPP_MESSAGE ||
+    "Hola, me gustaría obtener más información";
 
   const handleWhatsAppClick = () => {
-    if (!hasWhatsappConfig) return;
-    const baseUrl = `https://wa.me/${whatsappNumber}`;
-    const message = whatsappMessage?.length ? whatsappMessage : undefined;
-    const url = message
-      ? `${baseUrl}?text=${encodeURIComponent(message)}`
-      : baseUrl;
-    window.open(url, "_blank");
+    if (!whatsappNumber) return;
+    window.open(
+      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`,
+      "_blank"
+    );
   };
 
   const scrollToProducts = () => {
