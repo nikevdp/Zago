@@ -1,13 +1,20 @@
 import { Button } from "./ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { envConfig } from "../config/env";
 
 export function Hero() {
+  const { number: whatsappNumber, message: whatsappMessage } = envConfig.whatsapp;
+  const hasWhatsappConfig = Boolean(whatsappNumber);
+
   const handleWhatsAppClick = () => {
-    // Reemplaza con tu número de WhatsApp (formato internacional sin +)
-    const phoneNumber = "1234567890";
-    const message = "Hola, me gustaría obtener más información";
-    window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
+    if (!hasWhatsappConfig) return;
+    const baseUrl = `https://wa.me/${whatsappNumber}`;
+    const message = whatsappMessage?.length ? whatsappMessage : undefined;
+    const url = message
+      ? `${baseUrl}?text=${encodeURIComponent(message)}`
+      : baseUrl;
+    window.open(url, "_blank");
   };
 
   const scrollToProducts = () => {
@@ -46,13 +53,16 @@ export function Hero() {
           Ofrecemos productos y servicios de la más alta calidad para impulsar tu empresa al siguiente nivel
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-green-600 hover:bg-green-700 gap-2"
             onClick={handleWhatsAppClick}
+            disabled={!hasWhatsappConfig}
           >
             <MessageCircle className="w-5 h-5" />
-            Contactar por WhatsApp
+            {hasWhatsappConfig
+              ? "Contactar por WhatsApp"
+              : "WhatsApp no configurado"}
           </Button>
           <Button 
             size="lg" 
