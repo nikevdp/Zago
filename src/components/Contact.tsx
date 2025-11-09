@@ -1,27 +1,23 @@
-import { Mail, Phone, MapPin, Building2 } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import { envConfig } from "../config/env";
-
-const sanitizePhoneNumber = (value: string | undefined) =>
-  value?.replace(/[^0-9+]/g, "") ?? "";
+import { AscarLogo } from "./AscarLogo";
 
 export function Contact() {
-  const companyName = import.meta.env.VITE_COMPANY_NAME || "Mi Empresa";
+  const companyName = envConfig.company.name || "Mi Empresa";
   const companyTagline =
-    import.meta.env.VITE_COMPANY_TAGLINE ||
+    envConfig.company.tagline ||
     "Tu socio de confianza en soluciones profesionales";
-  const companyEmail =
-    import.meta.env.VITE_COMPANY_EMAIL || "contacto@miempresa.com";
+  const companyEmail = envConfig.company.email || "contacto@miempresa.com";
   const companyPhoneDisplay =
-    import.meta.env.VITE_COMPANY_PHONE || "+1 (234) 567-890";
-  const companyPhoneHref =
-    sanitizePhoneNumber(import.meta.env.VITE_COMPANY_PHONE) || "1234567890";
+    envConfig.company.phoneDisplay || "+1 (234) 567-890";
+  const companyPhoneHref = envConfig.company.phoneHref || "1234567890";
   const addressLine1 =
-    import.meta.env.VITE_COMPANY_ADDRESS_LINE1 || "Calle Principal 123";
+    envConfig.company.addressLine1 || "Calle Principal 123";
   const addressLine2 =
-    import.meta.env.VITE_COMPANY_ADDRESS_LINE2 || "Ciudad, Estado 12345";
+    envConfig.company.addressLine2 || "Ciudad, Estado 12345";
   const googleMapsEmbedUrl =
-    import.meta.env.VITE_GOOGLE_MAPS_EMBED_URL ||
+    envConfig.google.mapsEmbedUrl ||
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509374!2d144.95373631531654!3d-37.817209979751554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sau!4v1614311735829!5m2!1sen!2sau";
   return (
     <section id="contacto" className="py-20 px-4 bg-gray-50">
@@ -36,8 +32,8 @@ export function Contact() {
             <CardContent className="p-8">
               {/* Logo */}
               <div className="flex items-center justify-center mb-8">
-                <div className="bg-blue-600 text-white p-6 rounded-full">
-                  <Building2 className="w-12 h-12" />
+                <div className="bg-white text-blue-600 p-6 rounded-full border border-blue-600">
+                  <AscarLogo className="w-24 h-12" />
                 </div>
               </div>
               
@@ -48,7 +44,7 @@ export function Contact() {
 
               <div className="space-y-6">
                 {/* Email */}
-                {companyEmail ? (
+                {companyEmail && (
                   <div className="flex items-start gap-4">
                     <div className="bg-blue-100 p-3 rounded-lg">
                       <Mail className="w-6 h-6 text-blue-600" />
@@ -63,19 +59,10 @@ export function Contact() {
                       </a>
                     </div>
                   </div>
-                  <div>
-                    <p className="text-gray-500 text-sm">Email</p>
-                    <a
-                      href={`mailto:${companyEmail}`}
-                      className="text-blue-600 hover:underline"
-                    >
-                      {companyEmail}
-                    </a>
-                  </div>
-                </div>
+                )}
 
                 {/* Teléfono */}
-                {companyPhoneDisplay && companyPhoneHref ? (
+                {companyPhoneDisplay && companyPhoneHref && (
                   <div className="flex items-start gap-4">
                     <div className="bg-blue-100 p-3 rounded-lg">
                       <Phone className="w-6 h-6 text-blue-600" />
@@ -90,19 +77,10 @@ export function Contact() {
                       </a>
                     </div>
                   </div>
-                  <div>
-                    <p className="text-gray-500 text-sm">Teléfono</p>
-                    <a
-                      href={`tel:${companyPhoneHref}`}
-                      className="text-blue-600 hover:underline"
-                    >
-                      {companyPhoneDisplay}
-                    </a>
-                  </div>
-                </div>
+                )}
 
                 {/* Dirección */}
-                {addressLine1 || addressLine2 ? (
+                {(addressLine1 || addressLine2) && (
                   <div className="flex items-start gap-4">
                     <div className="bg-blue-100 p-3 rounded-lg">
                       <MapPin className="w-6 h-6 text-blue-600" />
@@ -116,15 +94,7 @@ export function Contact() {
                       </p>
                     </div>
                   </div>
-                  <div>
-                    <p className="text-gray-500 text-sm">Dirección</p>
-                    <p className="text-gray-900">
-                      {addressLine1}
-                      <br />
-                      {addressLine2}
-                    </p>
-                  </div>
-                </div>
+                )}
               </div>
             </CardContent>
           </Card>

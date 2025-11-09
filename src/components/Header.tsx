@@ -1,6 +1,6 @@
-import { Building2 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { envConfig } from "../config/env";
+import { AscarLogo } from "./AscarLogo";
 
 const navItems = [
   { name: "Inicio", href: "#inicio" },
@@ -60,8 +60,8 @@ export function Header() {
         <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="bg-blue-600 text-white p-2 rounded-lg">
-              <Building2 className="w-6 h-6" />
+            <div className="bg-white text-blue-600 p-2 rounded-lg border border-blue-600">
+              <AscarLogo className="w-10 h-6" />
             </div>
             <span className="text-gray-900">
               {envConfig.company.name || "Mi Empresa"}
