@@ -39,7 +39,7 @@ export function Header() {
     const id = href.replace("#", "");
     const element = document.getElementById(id);
     if (element) {
-      const offset = 80; // Altura del header
+      const offset = 50; // Altura del header
       const elementPosition = element.getBoundingClientRect().top;
       const offsetPosition = elementPosition + window.pageYOffset - offset;
 

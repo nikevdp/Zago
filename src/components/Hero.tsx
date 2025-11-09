@@ -61,12 +61,9 @@ export function Hero() {
             size="lg"
             className="bg-green-600 hover:bg-green-700 gap-2"
             onClick={handleWhatsAppClick}
-            disabled={!hasWhatsappConfig}
           >
             <MessageCircle className="w-5 h-5" />
-            {hasWhatsappConfig
-              ? "Contactar por WhatsApp"
-              : "WhatsApp no configurado"}
+            Contactar por WhatsApp
           </Button>
           <Button 
             size="lg" 

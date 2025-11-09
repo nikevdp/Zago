@@ -21,5 +21,9 @@ export default function Reviews({ appId }: Props) {
     }
   }, []);
 
-  return <div className={`elfsight-app-${appId}`} data-elfsight-app-lazy />;
+  return (
+    <section id="clientes" className='py-20 px-4 bg-white'>
+      <div className={`elfsight-app-${appId}`} data-elfsight-app-lazy />
+    </section>
+  );
 }
