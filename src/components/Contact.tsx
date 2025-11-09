@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Building2 } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
+import { envConfig } from "../config/env";
 
 const sanitizePhoneNumber = (value: string | undefined) =>
   value?.replace(/[^0-9+]/g, "") ?? "";
@@ -47,9 +48,20 @@ export function Contact() {
 
               <div className="space-y-6">
                 {/* Email */}
-                <div className="flex items-start gap-4">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <Mail className="w-6 h-6 text-blue-600" />
+                {companyEmail ? (
+                  <div className="flex items-start gap-4">
+                    <div className="bg-blue-100 p-3 rounded-lg">
+                      <Mail className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <p className="text-gray-500 text-sm">Email</p>
+                      <a
+                        href={`mailto:${companyEmail}`}
+                        className="text-blue-600 hover:underline"
+                      >
+                        {companyEmail}
+                      </a>
+                    </div>
                   </div>
                   <div>
                     <p className="text-gray-500 text-sm">Email</p>
@@ -63,9 +75,20 @@ export function Contact() {
                 </div>
 
                 {/* Teléfono */}
-                <div className="flex items-start gap-4">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <Phone className="w-6 h-6 text-blue-600" />
+                {companyPhoneDisplay && companyPhoneHref ? (
+                  <div className="flex items-start gap-4">
+                    <div className="bg-blue-100 p-3 rounded-lg">
+                      <Phone className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <p className="text-gray-500 text-sm">Teléfono</p>
+                      <a
+                        href={`tel:${companyPhoneHref}`}
+                        className="text-blue-600 hover:underline"
+                      >
+                        {companyPhoneDisplay}
+                      </a>
+                    </div>
                   </div>
                   <div>
                     <p className="text-gray-500 text-sm">Teléfono</p>
@@ -79,9 +102,19 @@ export function Contact() {
                 </div>
 
                 {/* Dirección */}
-                <div className="flex items-start gap-4">
-                  <div className="bg-blue-100 p-3 rounded-lg">
-                    <MapPin className="w-6 h-6 text-blue-600" />
+                {addressLine1 || addressLine2 ? (
+                  <div className="flex items-start gap-4">
+                    <div className="bg-blue-100 p-3 rounded-lg">
+                      <MapPin className="w-6 h-6 text-blue-600" />
+                    </div>
+                    <div>
+                      <p className="text-gray-500 text-sm">Dirección</p>
+                      <p className="text-gray-900">
+                        {addressLine1}
+                        {addressLine1 && addressLine2 && <br />}
+                        {addressLine2}
+                      </p>
+                    </div>
                   </div>
                   <div>
                     <p className="text-gray-500 text-sm">Dirección</p>

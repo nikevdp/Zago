@@ -1,5 +1,6 @@
 import { Building2 } from "lucide-react";
 import { useState, useEffect } from "react";
+import { envConfig } from "../config/env";
 
 const navItems = [
   { name: "Inicio", href: "#inicio" },
@@ -62,7 +63,9 @@ export function Header() {
             <div className="bg-blue-600 text-white p-2 rounded-lg">
               <Building2 className="w-6 h-6" />
             </div>
-            <span className="text-gray-900">Mi Empresa</span>
+            <span className="text-gray-900">
+              {envConfig.company.name || "Mi Empresa"}
+            </span>
           </div>
 
           {/* Navegación */}

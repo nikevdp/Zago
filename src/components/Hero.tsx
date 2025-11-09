@@ -1,6 +1,7 @@
 import { Button } from "./ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import { envConfig } from "../config/env";
 
 const sanitizePhoneNumber = (value: string | undefined) =>
   value?.replace(/[^0-9]/g, "") ?? "";
@@ -56,13 +57,16 @@ export function Hero() {
           Ofrecemos productos y servicios de la más alta calidad para impulsar tu empresa al siguiente nivel
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
-          <Button 
-            size="lg" 
+          <Button
+            size="lg"
             className="bg-green-600 hover:bg-green-700 gap-2"
             onClick={handleWhatsAppClick}
+            disabled={!hasWhatsappConfig}
           >
             <MessageCircle className="w-5 h-5" />
-            Contactar por WhatsApp
+            {hasWhatsappConfig
+              ? "Contactar por WhatsApp"
+              : "WhatsApp no configurado"}
           </Button>
           <Button 
             size="lg" 
