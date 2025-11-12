@@ -166,11 +166,7 @@ export function Products() {
   useEffect(() => {
     if (!selectedCategory) {
       setSelectedProduct(null);
-      return;
     }
-
-    const firstProduct = selectedCategory.products.at(0) ?? null;
-    setSelectedProduct(firstProduct);
   }, [selectedCategory]);
 
   useEffect(() => {
@@ -186,7 +182,7 @@ export function Products() {
 
   const openCategoryModal = (category: NormalizedCategory) => {
     setSelectedCategory(category);
-    setSelectedProduct(category.products.at(0) ?? null);
+    setSelectedProduct(null);
   };
 
   const closeModal = () => {
