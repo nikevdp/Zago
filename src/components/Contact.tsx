@@ -1,5 +1,6 @@
 import { Mail, Phone, MapPin, Building2 } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
+import ASCARlogo from "../assets/ASCAlogo.jpeg";
 
 const sanitizePhoneNumber = (value: string | undefined) =>
   value?.replace(/[^0-9+]/g, "") ?? "";
@@ -35,13 +36,9 @@ export function Contact() {
             <CardContent className="p-8">
               {/* Logo */}
               <div className="flex items-center justify-center mb-8">
-                <div className="bg-blue-600 text-white p-6 rounded-full">
-                  <Building2 className="w-12 h-12" />
-                </div>
+                <img src={ASCARlogo} alt="ASCAR Logo" className="w-auto mb-6" />
               </div>
-              
               <div className="text-center mb-8">
-                <h3 className="mb-2">{companyName}</h3>
                 <p className="text-gray-600">{companyTagline}</p>
               </div>
 

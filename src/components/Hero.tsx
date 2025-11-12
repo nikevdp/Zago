@@ -2,6 +2,7 @@ import { Button } from "./ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import { envConfig } from "../config/env";
+import Heroimage from  "../assets/hero-background.jpeg";
 
 const sanitizePhoneNumber = (value: string | undefined) =>
   value?.replace(/[^0-9]/g, "") ?? "";
@@ -40,8 +41,7 @@ export function Hero() {
       {/* Imagen de fondo */}
       <div className="absolute inset-0">
         <ImageWithFallback
-          src="https://images.unsplash.com/photo-1653724618298-8838668f7d9f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxidXNpbmVzcyUyMGhlcm8lMjBiYW5uZXJ8ZW58MXx8fHwxNzYyNjE0OTM4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-          alt="Hero banner"
+          src={Heroimage}
           className="w-full h-full object-cover"
         />
         {/* Overlay oscuro para mejorar legibilidad del texto */}

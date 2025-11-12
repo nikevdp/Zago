@@ -10,7 +10,6 @@ export type ProductCategory = {
   id: string;
   name: string;
   coverImage: string;
-  shortDescription: string;
   products: SubProduct[];
 };
 
@@ -24,7 +23,6 @@ export type ProductsJsonShape = {
 export type NormalizedCategory = {
   id: string;
   name: string;
-  description: string;
   image: string;
   products: SubProduct[];
 };

@@ -647,6 +647,10 @@
     justify-content: center;
   }
 
+  .justify-i-center {
+    justify-items: center;
+  }
+
   .justify-content-space-around {
     justify-content: space-around;
   }

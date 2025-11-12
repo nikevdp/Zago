@@ -33,9 +33,6 @@ export function ProductModal({
               <h3 className="text-xl font-semibold text-gray-900">
                 {selectedCategory.name}
               </h3>
-              <p className="text-sm text-gray-600">
-                {selectedCategory.description}
-              </p>
             </div>
             <button
               onClick={closeModal}

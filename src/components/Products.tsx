@@ -16,27 +16,83 @@ const FALLBACK_IMAGE =
 
 const productsData = productsJson as ProductsJsonShape;
 
+const EXTERNAL_IMAGE_REGEX = /^(https?:)?\/\//i;
+
+const assetImports = import.meta.glob("../assets/**/*", {
+  eager: true,
+  import: "default",
+}) as Record<string, string>;
+
+const normalizeAssetPath = (rawPath: string) => {
+  const sanitized = rawPath.replace(/\\/g, "/").trim();
+  if (!sanitized) return undefined;
+
+  if (sanitized.startsWith("../assets/")) {
+    return sanitized;
+  }
+
+  if (sanitized.startsWith("./")) {
+    return normalizeAssetPath(sanitized.replace(/^\.\/+/, ""));
+  }
+
+  if (sanitized.startsWith("/")) {
+    return normalizeAssetPath(sanitized.replace(/^\/+/, ""));
+  }
+
+  if (sanitized.startsWith("src/")) {
+    return normalizeAssetPath(sanitized.replace(/^src\//, ""));
+  }
+
+  if (sanitized.startsWith("assets/")) {
+    return `../${sanitized}`;
+  }
+
+  return sanitized.startsWith("../") ? sanitized : undefined;
+};
+
+const resolveImageSource = (imagePath?: string) => {
+  if (!imagePath) return undefined;
+
+  if (
+    EXTERNAL_IMAGE_REGEX.test(imagePath) ||
+    imagePath.startsWith("data:")
+  ) {
+    return imagePath;
+  }
+
+  const normalizedPath = normalizeAssetPath(imagePath);
+  if (!normalizedPath) return undefined;
+
+  return assetImports[normalizedPath];
+};
+
 const categories =
   productsData.productCategories ??
   productsData.products?.productCategories ??
   [];
 
 const normalizedCategories: NormalizedCategory[] = categories.map(
-  (category, index) => ({
-    id: category.id ?? `category-${index}`,
-    name: category.name ?? "Categoría sin nombre",
-    description:
-      category.shortDescription ?? "Pronto tendrás más información aquí.",
-    image: category.coverImage ?? FALLBACK_IMAGE,
-    products: (category.products ?? []).map((product, productIndex) => ({
-      ...product,
-      id: product.id ?? `${category.id ?? index}-product-${productIndex}`,
-      image: product.image ?? category.coverImage ?? FALLBACK_IMAGE,
-      description:
-        product.description ??
-        "Estamos preparando los detalles de este producto.",
-    })),
-  })
+  (category, index) => {
+    const categoryImage =
+      resolveImageSource(category.coverImage) ?? FALLBACK_IMAGE;
+
+    return {
+      id: category.id ?? `category-${index}`,
+      name: category.name ?? "Categoría sin nombre",
+      image: categoryImage,
+      products: (category.products ?? []).map((product, productIndex) => ({
+        ...product,
+        id: product.id ?? `${category.id ?? index}-product-${productIndex}`,
+        image:
+          resolveImageSource(product.image) ??
+          product.image ??
+          categoryImage,
+        description:
+          product.description ??
+          "Estamos preparando los detalles de este producto.",
+      })),
+    };
+  }
 );
 
 export function Products() {
@@ -109,9 +165,8 @@ export function Products() {
                   className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
                 />
               </div>
-              <CardContent className="p-4">
+              <CardContent className="justify-i-center p-4">
                 <h3 className="mb-2">{category.name}</h3>
-                <p className="text-gray-600">{category.description}</p>
 
                 <button
                   className="mt-1 mt-4 w-full rounded-md bg-primary px-4 py-2 text-sm font-medium text-white transition hover:bg-primary/90 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2"
