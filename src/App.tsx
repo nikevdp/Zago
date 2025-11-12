@@ -10,7 +10,7 @@ export default function App() {
       <Header />
       <Hero />
       <Products />
-      <Reviews appId="1b2d5d60-8d0b-4ebd-945f-c1ebf064669a" />
+      <Reviews appId="0625b084-2415-430b-827d-3a5ddd6e5cab" />
       <Contact />
     </div>
   );
