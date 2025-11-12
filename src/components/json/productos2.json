@@ -1,0 +1,503 @@
+{
+  "categorias": [
+    {
+      "categoria": "Secadores de Piso",
+      "archivo_categoria": "secadores-de-piso.html",
+      "productos": [
+        {
+          "nombre": "SECADOR NEGRO",
+          "archivo_html": "secador negro.html",
+          "imagen": {
+            "src": "secador negro.png",
+            "alt": "Secador Negro"
+          },
+          "descripcion": "Este secador de piso profesional es ideal para uso intensivo en áreas grandes. Fabricado con materiales resistentes y de alta calidad, garantiza un secado rápido y eficiente.",
+          "especificaciones": {
+            "Material": "100% Caucho virgen y alma de acero.",
+            "Tamaño": "N30, N40, N50, N80.",
+            "Color": "Negro.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "SECADOR ROJO",
+          "archivo_html": "secador rojo.html",
+          "imagen": {
+            "src": "secador rojo.png",
+            "alt": "Secador Rojo"
+          },
+          "descripcion": "Este secador de piso profesional es ideal para uso intensivo en áreas grandes. Fabricado con materiales resistentes y de alta calidad, garantiza un secado rápido y eficiente.",
+          "especificaciones": {
+            "Material": "100% Caucho virgen y alma de acero.",
+            "Tamaño": "N30, N40, N50, N80.",
+            "Color": "Rojo.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "SECADOR PLASTICO BLANCO",
+          "archivo_html": "secador blanco.html",
+          "imagen": {
+            "src": "secador blanco.png",
+            "alt": "Secador Blanco"
+          },
+          "descripcion": "Este secador de piso profesional es ideal para uso intensivo en áreas grandes. Fabricado con materiales resistentes y de alta calidad, garantiza un secado rápido y eficiente.",
+          "especificaciones": {
+            "Material": "100% Polipropileno Virgen, reforzado con doble goma de eva.",
+            "Tamaño": "N40.",
+            "Color": "Blanco.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "SECADOR PLASTICO ECONOMICO",
+          "archivo_html": "secador plastico.html",
+          "imagen": {
+            "src": "secador plastico.png",
+            "alt": "Secador Plastico Economico"
+          },
+          "descripcion": "Este secador de piso profesional es ideal para uso intensivo en áreas grandes. Fabricado con materiales resistentes y de alta calidad, garantiza un secado rápido y eficiente.",
+          "especificaciones": {
+            "Material": "100% Polipropileno virgen y doble goma de eva.",
+            "Tamaño": "N40.",
+            "Color": "Colores variados.",
+            "Cantidad por Bulto": "36 Unidades."
+          }
+        },
+        {
+          "nombre": "CABO DE MADERA 1.2M",
+          "archivo_html": "cabo.html",
+          "imagen": {
+            "src": "cabo.png",
+            "alt": "Cabo"
+          },
+          "descripcion": "Cabo de madera de 1.2 metros, resistente y versátil, ideal para herramientas de jardinería, construcción, mantenimiento, limpieza, etc.",
+          "especificaciones": {
+            "Material": "Pino.",
+            "Tamaño": "1.2m.",
+            "Rosca": "Universal.",
+            "Cantidad por Bulto": "24 Unidades."
+          }
+        }
+      ]
+    },
+    {
+      "categoria": "Sopapas",
+      "archivo_categoria": "sopapas.html",
+      "productos": [
+        {
+          "nombre": "SOPAPA NEGRA CON CABO",
+          "archivo_html": "sopapa negra con cabo.html",
+          "imagen": {
+            "src": "SOPAPA NEGRA.png",
+            "alt": "Sopapa Negra con Cabo"
+          },
+          "descripcion": "Sopapa destapadora de goma resistente, ideal para destapar tuberías de manera rápida, eficaz y sin químicos.",
+          "especificaciones": {
+            "Material": "100% Caucho y polipropileno virgen.",
+            "Color": "Sopapa negra y cabos plasticos variados.",
+            "Cantidad por Bulto": "24 Unidades."
+          }
+        },
+        {
+          "nombre": "SOPAPA ROJA",
+          "archivo_html": "sopapa roja.html",
+          "imagen": {
+            "src": "sopapa roja.png",
+            "alt": "Sopapa Roja"
+          },
+          "descripcion": "Sopapa destapadora de goma resistente, ideal para destapar tuberías de manera rápida, eficaz y sin químicos.",
+          "especificaciones": {
+            "Material": "100% Caucho y polipropileno virgen.",
+            "Color": "Sopapa negra y cabos plasticos variados.",
+            "Cantidad por Bulto": "24 Unidades."
+          }
+        },
+        {
+          "nombre": "SOPAPA FUELLE",
+          "archivo_html": "sopapa fuelle.html",
+          "imagen": {
+            "src": "sopapa fuelle.png",
+            "alt": "Sopapa Fuelle"
+          },
+          "descripcion": "Sopapa fuelle plástica de alta resistencia, diseñada para destapar tuberías tipo bacha.",
+          "especificaciones": {
+            "Material": "100% Polipropileno virgen.",
+            "Color": "Variados por bulto.",
+            "Cantidad por Bulto": "60 Unidades."
+          }
+        },
+        {
+          "nombre": "SOPAPON",
+          "archivo_html": "sopapon.html",
+          "imagen": {
+            "src": "sopapon.png",
+            "alt": "Sopapon"
+          },
+          "descripcion": "Sopapón de goma, más potente que una sopapa común, ideal para destapar obstrucciones difíciles con mayor presión y eficacia.",
+          "especificaciones": {
+            "Material": "100% Caucho virgen.",
+            "Tamaño": "Grande.",
+            "Color": "Negro.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        }
+      ]
+    },
+    {
+      "categoria": "Escobillones",
+      "archivo_categoria": "escobillones.html",
+      "productos": [
+        {
+          "nombre": "ESCOBILLON ANDREA",
+          "archivo_html": "andrea.html",
+          "imagen": {
+            "src": "andrea.png",
+            "alt": "Escobillon Andrea"
+          },
+          "descripcion": "Escobillón de fibras duraderas y base resistente, perfecto para una limpieza profunda en pisos.",
+          "especificaciones": {
+            "Material": "Base plastica lisa 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base clara y filamentos de diversos colores por bulto.",
+            "Medida": "17cm de fibra - 6 Hileras.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "ESCOBILLON GUMER",
+          "archivo_html": "gumer.html",
+          "imagen": {
+            "src": "gumer.png",
+            "alt": "Escobillon Gumer"
+          },
+          "descripcion": "Escobillón de fibras duraderas y base resistente, perfecto para una limpieza profunda en pisos.",
+          "especificaciones": {
+            "Material": "Base plastica curva 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base clara y filamentos de diversos colores por bulto.",
+            "Medida": "17cm de fibra - 6 Hileras.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "ESCOBILLON FEDE",
+          "archivo_html": "fede.html",
+          "imagen": {
+            "src": "fede.png",
+            "alt": "Escobillon Fede"
+          },
+          "descripcion": "Escobillón de fibras duraderas y base resistente, perfecto para una limpieza profunda en pisos.",
+          "especificaciones": {
+            "Material": "Base plastica lisa 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base clara y filamentos de diversos colores por bulto.",
+            "Medida": "22cm de fibra - 6 Hileras.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "ESCOBILLON MARTIN",
+          "archivo_html": "martin.html",
+          "imagen": {
+            "src": "martin.png",
+            "alt": "Escobillon Martin"
+          },
+          "descripcion": "Escobillón de fibras duraderas y base resistente, perfecto para una limpieza profunda en pisos.",
+          "especificaciones": {
+            "Material": "Base plastica curva 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base clara y filamentos de diversos colores por bulto.",
+            "Medida": "22cm de fibra - 6 Hileras.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "ESCOBILLON GAL-DAS",
+          "archivo_html": "galdas.html",
+          "imagen": {
+            "src": "galdas.png",
+            "alt": "Escobillon Gal-Das"
+          },
+          "descripcion": "Escobillón de fibras duraderas y base resistente, perfecto para una limpieza profunda en pisos.",
+          "especificaciones": {
+            "Material": "Base plastica curva laqueada 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base laqueada y filamento champagne.",
+            "Medida": "18,5cm de fibra - 6 Hileras.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "ESCOBILLON DAS-GAL",
+          "archivo_html": "dasgal.html",
+          "imagen": {
+            "src": "dasgal.png",
+            "alt": "Escobillon Das-Gal"
+          },
+          "descripcion": "Escobillón de fibras duraderas y base resistente, perfecto para una limpieza profunda en pisos.",
+          "especificaciones": {
+            "Material": "Base plastica lisa laqueada 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base laqueada y filamento champagne.",
+            "Medida": "18,5cm de fibra - 6 Hileras.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "ESCOBILLON SUPER JULIANA",
+          "archivo_html": "juliana.html",
+          "imagen": {
+            "src": "juliana.png",
+            "alt": "Escobillon Juliana"
+          },
+          "descripcion": "Escobillón de fibras duraderas y base resistente, perfecto para una limpieza profunda en pisos.",
+          "especificaciones": {
+            "Material": "Base plastica curva 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base clara y filamentos de diversos colores por bulto.",
+            "Medida": "25,5cm de fibra - 6 Hileras.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "ESCOBILLON SUPER DA SILVA",
+          "archivo_html": "da silva.html",
+          "imagen": {
+            "src": "da silva.png",
+            "alt": "Escobillon Da Silva"
+          },
+          "descripcion": "Escobillón de fibras duraderas y base resistente, perfecto para una limpieza profunda en pisos.",
+          "especificaciones": {
+            "Material": "Base plastica lisa 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base clara y filamentos de diversos colores por bulto.",
+            "Medida": "25,5cm de fibra - 6 Hileras.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "ESCOBILLON 4H",
+          "archivo_html": "4h.html",
+          "imagen": {
+            "src": "4h.png",
+            "alt": "Escobillon 4H"
+          },
+          "descripcion": "Escobillón de fibras duraderas y base resistente, perfecto para una limpieza profunda en pisos.",
+          "especificaciones": {
+            "Material": "Base plastica lisa 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base clara y filamentos de diversos colores por bulto.",
+            "Medida": "17cm de fibra - 4 Hileras.",
+            "Cantidad por Bulto": "18 Unidades."
+          }
+        },
+        {
+          "nombre": "ESCOBILLON FACUNDO",
+          "archivo_html": "facundo.html",
+          "imagen": {
+            "src": "facundo.png",
+            "alt": "Escobillon Facundo"
+          },
+          "descripcion": "Escobillón de fibras duraderas y base resistente, perfecto para una limpieza profunda en pisos.",
+          "especificaciones": {
+            "Material": "Base plastica lisa 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base clara y filamentos de diversos colores por bulto.",
+            "Medida": "17cm de fibra - 5 Hileras.",
+            "Cantidad por Bulto": "18 Unidades."
+          }
+        },
+        {
+          "nombre": "ESCOBILLON ORENCE",
+          "archivo_html": "orence.html",
+          "imagen": {
+            "src": "orence.png",
+            "alt": "Escobillon Orence"
+          },
+          "descripcion": "Escobillón de fibras duraderas y base resistente, perfecto para una limpieza profunda en pisos.",
+          "especificaciones": {
+            "Material": "Base plastica lisa laqueada 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base laqueada, filamentos blanco y negro.",
+            "Medida": "18,5cm de fibra - 6 Hileras.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "ESCOBILLON ALGEDA",
+          "archivo_html": "algeda.html",
+          "imagen": {
+            "src": "algeda.png",
+            "alt": "Escobillon Algeda"
+          },
+          "descripcion": "Escobillón de fibras duraderas y base resistente, perfecto para una limpieza profunda en pisos.",
+          "especificaciones": {
+            "Material": "Base plastica lisa 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base con capucha y filamentos variados.",
+            "Medida": "18,5cm de fibra - 6 Hileras.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "Secador de Piso Profesional",
+          "archivo_html": "vilor.html",
+          "imagen": {
+            "src": "vilor.png",
+            "alt": "Escobillon Vilor"
+          },
+          "descripcion": "Escobillón de fibras duraderas y base resistente, perfecto para una limpieza profunda en pisos.",
+          "especificaciones": {
+            "Material": "Base plastica lisa 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base con capucha negra, filamentos blanco y negro.",
+            "Medida": "18,5cm de fibra - 6 Hileras.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "ESCOBETA CLAUDIA",
+          "archivo_html": "claudia.html",
+          "imagen": {
+            "src": "claudia.png",
+            "alt": "Escobillon Claudia"
+          },
+          "descripcion": "Escobeta para exterior, con cerdas resistentes y mango robusto, ideal para barrer hojas, tierra y residuos en áreas abiertas y superficies rugosas.",
+          "especificaciones": {
+            "Material": "Base plastica 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base clara y filamentos de diversos colores por bulto.",
+            "Medida": "22cm de fibra - 4 Hileras.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "ESCOBETA ALICIA",
+          "archivo_html": "alicia.html",
+          "imagen": {
+            "src": "alicia.png",
+            "alt": "Escobillon Alicia"
+          },
+          "descripcion": "Escobeta para exterior, con cerdas resistentes y mango robusto, ideal para barrer hojas, tierra y residuos en áreas abiertas y superficies rugosas.",
+          "especificaciones": {
+            "Material": "Base plastica 100% polipropileno virgen y monofilamento pet.",
+            "Colores": "Base clara y filamentos de diversos colores por bulto.",
+            "Medida": "17cm de fibra - 4 Hileras.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        }
+      ]
+    },
+    {
+      "categoria": "Plásticos",
+      "archivo_categoria": "plasticos.html",
+      "productos": [
+        {
+          "nombre": "PALA CON CABO",
+          "archivo_html": "pala con cabo.html",
+          "imagen": {
+            "src": "pala con cabo.png",
+            "alt": "Pala con cabo"
+          },
+          "descripcion": "Pala de plástico resistente, perfecta para recolectar hojas, escombros ligeros y limpieza en general.",
+          "especificaciones": {
+            "Material": "100% Polipropileno virgen.",
+            "Color": "Diversos por bulto.",
+            "Cantidad por Bulto": "60 Unidades."
+          }
+        },
+        {
+          "nombre": "BARREHOJAS",
+          "archivo_html": "barrehojas.html",
+          "imagen": {
+            "src": "barrehojas.jpg",
+            "alt": "Barrehojas"
+          },
+          "descripcion": "Barrehojas ligero y práctico, ideal para recolectar hojas y residuos en jardines y exteriores.",
+          "especificaciones": {
+            "Material": "100% Polipropileno virgen.",
+            "Color": "Diversos por bulto.",
+            "Cantidad por Bulto": "36 Unidades."
+          }
+        },
+        {
+          "nombre": "PALA DE MANO",
+          "archivo_html": "pala de mano.html",
+          "imagen": {
+            "src": "pala de mano.png",
+            "alt": "Pala de Mano"
+          },
+          "descripcion": "Pala de mano de plástico, ideal para limpieza, recolectar residuos, escombros ligeros y mantener áreas impecables de manera práctica.",
+          "especificaciones": {
+            "Material": "100% Polipropileno virgen.",
+            "Color": "Diversos por bulto.",
+            "Cantidad por Bulto": "60 Unidades."
+          }
+        },
+        {
+          "nombre": "PALA DE MANO CON GOMA",
+          "archivo_html": "pala de mano con goma.html",
+          "imagen": {
+            "src": "pala de mano con goma.png",
+            "alt": "Pala de Mano con Goma"
+          },
+          "descripcion": "Pala de mano de plástico, ideal para limpieza, recolectar residuos, escombros ligeros y mantener áreas impecables de manera práctica.",
+          "especificaciones": {
+            "Material": "100% Polipropileno virgen con goma de PVC.",
+            "Color": "Diversos por bulto.",
+            "Cantidad por Bulto": "60 Unidades."
+          }
+        }
+      ]
+    },
+    {
+      "categoria": "Alfombras",
+      "archivo_categoria": "alfombras.html",
+      "productos": [
+        {
+          "nombre": "ALFOMBRA SUPER",
+          "archivo_html": "super.html",
+          "imagen": {
+            "src": "SUPER.png",
+            "alt": "Alfombra Super"
+          },
+          "descripcion": "Alfombra antideslizante para bañera, con superficie segura y diseño antideslizante, brindando comodidad y protección contra caídas en la ducha.",
+          "especificaciones": {
+            "Material": "100% Caucho virgen.",
+            "Color": "Diversos por Bulto.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "ALFOMBRA VENTOSA",
+          "archivo_html": "ventosa.html",
+          "imagen": {
+            "src": "ventosa.png",
+            "alt": "Alfombra Ventosa"
+          },
+          "descripcion": "Alfombra antideslizante para bañera, con superficie segura y diseño antideslizante, brindando comodidad y protección contra caídas en la ducha.",
+          "especificaciones": {
+            "Material": "100% Caucho virgen.",
+            "Color": "Diversos por Bulto.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "ALFOMBRA ECO",
+          "archivo_html": "eco.html",
+          "imagen": {
+            "src": "ECO.png",
+            "alt": "Alfombra Economica"
+          },
+          "descripcion": "Alfombra antideslizante para bañera, con superficie segura y diseño antideslizante, brindando comodidad y protección contra caídas en la ducha.",
+          "especificaciones": {
+            "Material": "100% Caucho virgen.",
+            "Color": "Diversos por Bulto.",
+            "Cantidad por Bulto": "12 Unidades."
+          }
+        },
+        {
+          "nombre": "FELPUDO LIMPIAPIE",
+          "archivo_html": "felpudo.html",
+          "imagen": {
+            "src": "FELPUDO.png",
+            "alt": "Felpudo"
+          },
+          "descripcion": "Felpudo sanitizante, ideal para limpiar y desinfectar suelas de zapatos al entrar a cualquier espacio.",
+          "especificaciones": {
+            "Material": "100% Caucho virgen.",
+            "Color": "Negro.",
+            "Cantidad por Bulto": "10 Unidades."
+          }
+        }
+      ]
+    }
+  ]
+}

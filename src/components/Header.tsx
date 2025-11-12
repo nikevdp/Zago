@@ -1,6 +1,6 @@
-import { Building2 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { envConfig } from "../config/env";
+import ASCARlogo from "../assets/ASCAlogo.jpeg";
 
 const navItems = [
   { name: "Inicio", href: "#inicio" },
@@ -59,15 +59,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div className="flex items-center gap-2">
-            <div className="bg-blue-600 text-white p-2 rounded-lg">
-              <Building2 className="w-6 h-6" />
-            </div>
-            <span className="text-gray-900">
-              {envConfig.company.name || "Mi Empresa"}
-            </span>
-          </div>
-
+          <img src={ASCARlogo} alt="ASCAR Logo" className="h-12 w-auto" />
           {/* Navegación */}
           <nav className="hidden md:flex items-center gap-8">
             {navItems.map((item) => {

@@ -1,317 +1,151 @@
 {
   "productCategories": [
     {
-      "id": "limpieza",
-      "name": "Línea de Limpieza Profesional",
-      "coverImage": "https://images.unsplash.com/photo-1527515637462-cff94eecc1ac?auto=format&fit=crop&w=1080&q=80",
-      "shortDescription": "Soluciones que eliminan la suciedad más difícil sin dañar superficies.",
+      "id": "Alfombras",
+      "name": "Alfombras",
+      "coverImage": "assets/alfombras/ECO.png",
       "products": [
         {
-          "id": "limpieza-1",
-          "name": "Desengrasante Alcalino",
-          "image": "https://images.unsplash.com/photo-1602143407151-7111542de6e8?auto=format&fit=crop&w=1080&q=80",
-          "description": "Remueve grasa y aceites en cocinas industriales manteniendo los estándares de higiene.",
-          "features": [
-            "Fórmula concentrada de acción inmediata",
-            "Seguro para acero inoxidable y cerámicos",
-            "Aroma fresco que neutraliza olores"
-          ]
+          "id": "eco",
+          "name": "ECO",
+          "image": "assets/alfombras/ECO.png",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "limpieza-2",
-          "name": "Detergente Neutro Multiuso",
-          "image": "https://images.unsplash.com/photo-1544986581-efac024faf62?auto=format&fit=crop&w=1080&q=80",
-          "description": "Ideal para mantenimiento diario de pisos y superficies delicadas.",
-          "features": [
-            "pH balanceado para uso continuo",
-            "Secado rápido sin dejar marcas",
-            "Biodegradable y libre de fosfatos"
-          ]
+          "id": "felpudo",
+          "name": "Felpudo",
+          "image": "assets/alfombras/FELPUDO.png",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "limpieza-3",
-          "name": "Limpiavidrios Antiestático",
-          "image": "https://images.unsplash.com/photo-1616628182507-c3e8b3d13052?auto=format&fit=crop&w=1080&q=80",
-          "description": "Deja un acabado cristalino que repele el polvo hasta por 72 horas.",
-          "features": [
-            "Secado sin vetas",
-            "Protege contra manchas de lluvia",
-            "Aplicador en spray de alto rendimiento"
-          ]
+          "id": "super",
+          "name": "Super",
+          "image": "assets/alfombras/SUPER.png",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "limpieza-4",
-          "name": "Desinfectante Cuaternario",
-          "image": "https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=1080&q=80",
-          "description": "Garantiza la eliminación del 99.9% de bacterias en áreas de alto tránsito.",
-          "features": [
-            "Aprobado para la industria alimentaria",
-            "Fragancia suave que perdura",
-            "Funciona en frío y caliente"
-          ]
-        },
-        {
-          "id": "limpieza-5",
-          "name": "Limpiador Desincrustante",
-          "image": "https://images.unsplash.com/photo-1616627567555-2ae88639690a?auto=format&fit=crop&w=1080&q=80",
-          "description": "Especializado en remover sarro y residuos calcáreos en baños y cocinas.",
-          "features": [
-            "Acción espumante controlada",
-            "Protege juntas y cerámicos",
-            "Incluye dosificador ergonómico"
-          ]
+          "id": "ventosa",
+          "name": "Ventosa",
+          "image": "assets/alfombras/ventosa.png",
+          "description": "Pronto tendrás más información aquí."
         }
       ]
     },
     {
-      "id": "mantenimiento",
-      "name": "Línea de Mantenimiento Industrial",
-      "coverImage": "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=1080&q=80",
-      "shortDescription": "Productos que prolongan la vida útil de maquinarias y herramientas.",
+      "id": "Plasticos",
+      "name": "Plasticos",
+      "coverImage": "assets/plasticos/barrehojas.jpg",
       "products": [
         {
-          "id": "mantenimiento-1",
-          "name": "Lubricante de Alta Precisión",
-          "image": "https://images.unsplash.com/photo-1517434324-1db605ff03d9?auto=format&fit=crop&w=1080&q=80",
-          "description": "Reduce la fricción en sistemas mecánicos con una película protectora ultra delgada.",
-          "features": [
-            "Resistente a temperaturas extremas",
-            "Protección anticorrosiva",
-            "Formato aerosol 360°"
-          ]
+          "id": "barrehojas",
+          "name": "Barrehojas",
+          "image": "assets/plasticos/barrehojas.jpg",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "mantenimiento-2",
-          "name": "Sellador de Roscas",
-          "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?auto=format&fit=crop&w=1080&q=80",
-          "description": "Evita fugas en conexiones hidráulicas y neumáticas de alta presión.",
-          "features": [
-            "Curado rápido en 10 minutos",
-            "Resistente a vibraciones continuas",
-            "Compatible con acero y latón"
-          ]
+          "id": "pala-con-cabo",
+          "name": "Pala con cabo",
+          "image": "assets/plasticos/pala con cabo.png",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "mantenimiento-3",
-          "name": "Limpiador de Contactos",
-          "image": "https://images.unsplash.com/photo-1545239351-ef35f43d514b?auto=format&fit=crop&w=1080&q=80",
-          "description": "Elimina residuos en tableros eléctricos sin dejar película conductiva.",
-          "features": [
-            "Evaporación inmediata",
-            "Seguro para plásticos sensibles",
-            "Aprobado por normas IEC"
-          ]
+          "id": "pala-de-mano-con-goma",
+          "name": "Pala de mano con goma",
+          "image": "assets/plasticos/pala de mano con goma.png",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "mantenimiento-4",
-          "name": "Grasa de Litio Multiuso",
-          "image": "https://images.unsplash.com/photo-1626777552725-659c23657a10?auto=format&fit=crop&w=1080&q=80",
-          "description": "Protege rodamientos y engranajes expuestos a cargas pesadas.",
-          "features": [
-            "Excelente adherencia",
-            "Impermeable a la humedad",
-            "Mayor intervalo entre lubricaciones"
-          ]
-        },
-        {
-          "id": "mantenimiento-5",
-          "name": "Aerosol Anticorrosivo",
-          "image": "https://images.unsplash.com/photo-1582719478250-ffd31bfb1fa7?auto=format&fit=crop&w=1080&q=80",
-          "description": "Genera una capa protectora contra ambientes salinos y químicos agresivos.",
-          "features": [
-            "Duración de hasta 12 meses",
-            "Aplicación uniforme",
-            "No gotea ni mancha"
-          ]
+          "id": "pala-de-mano",
+          "name": "Pala de mano",
+          "image": "assets/plasticos/pala de mano.png",
+          "description": "Pronto tendrás más información aquí."
         }
       ]
     },
     {
-      "id": "seguridad",
-      "name": "Línea de Seguridad e Higiene",
-      "coverImage": "https://images.unsplash.com/photo-1516826432051-11bc946d7026?auto=format&fit=crop&w=1080&q=80",
-      "shortDescription": "Equipos de protección que garantizan el bienestar de tu equipo de trabajo.",
+      "id": "Sopapas",
+      "name": "Sopapas",
+      "coverImage": "assets/sopapas/sopapa fuelle.png",
       "products": [
         {
-          "id": "seguridad-1",
-          "name": "Guantes Anticorte Nivel 5",
-          "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=1080&q=80",
-          "description": "Tejido de fibra Dyneema que ofrece la máxima resistencia con confort prolongado.",
-          "features": [
-            "Transpirable y ergonómico",
-            "Refuerzos en palma",
-            "Lavable hasta 30 ciclos"
-          ]
+          "id": "sopapa-fuelle",
+          "name": "Sopapa fuelle",
+          "image": "assets/sopapas/sopapa fuelle.png",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "seguridad-2",
-          "name": "Protector Auditivo Reutilizable",
-          "image": "https://images.unsplash.com/photo-1580894906472-d9190cc172b0?auto=format&fit=crop&w=1080&q=80",
-          "description": "Reduce el ruido hasta 32 dB con ajuste personalizable y cómodo.",
-          "features": [
-            "Incluye estuche de transporte",
-            "Silicona hipoalergénica",
-            "Certificación ANSI S3.19"
-          ]
+          "id": "sopapa-negra",
+          "name": "Sopapa Negra",
+          "image": "assets/sopapas/SOPAPA NEGRA.png",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "seguridad-3",
-          "name": "Mascarilla Filtrante N95",
-          "image": "https://images.unsplash.com/photo-1580281780460-82d277b0b018?auto=format&fit=crop&w=1080&q=80",
-          "description": "Filtro multicapa que retiene partículas ultrafinas sin dificultar la respiración.",
-          "features": [
-            "Clip nasal ajustable",
-            "Bordes termosellados",
-            "Protección superior certificada"
-          ]
+          "id": "sopapa-roja",
+          "name": "Sopapa roja",
+          "image": "assets/sopapas/sopapa roja.png",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "seguridad-4",
-          "name": "Gafas de Seguridad Panorámicas",
-          "image": "https://images.unsplash.com/photo-1573497491208-6b1acb260507?auto=format&fit=crop&w=1080&q=80",
-          "description": "Visión amplia con recubrimiento antiempaño y tratamiento antirayaduras.",
-          "features": [
-            "Compatible con casco y respirador",
-            "Filtro UV400",
-            "Incluye estuche rígido"
-          ]
-        },
-        {
-          "id": "seguridad-5",
-          "name": "Chaleco Reflectivo Premium",
-          "image": "https://images.unsplash.com/photo-1520607162513-142993b0693b?auto=format&fit=crop&w=1080&q=80",
-          "description": "Alta visibilidad con franjas microprismáticas y bolsillos multifunción.",
-          "features": [
-            "Tela resistente al desgarro",
-            "Bandas elásticas laterales",
-            "Ideal para jornadas nocturnas"
-          ]
+          "id": "sopapon",
+          "name": "Sopapon",
+          "image": "assets/sopapas/sopapon.png",
+          "description": "Pronto tendrás más información aquí."
         }
       ]
     },
     {
-      "id": "oficina",
-      "name": "Línea Corporativa de Oficina",
-      "coverImage": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1080&q=80",
-      "shortDescription": "Complementos ergonómicos que mejoran el confort y la productividad diaria.",
+      "id": "Secadores",
+      "name": "Secadores",
+      "coverImage": "assets/secadores/cabo.png",
       "products": [
         {
-          "id": "oficina-1",
-          "name": "Silla Ergonómica Premium",
-          "image": "https://images.unsplash.com/photo-1587614382346-4ec892f9aca3?auto=format&fit=crop&w=1080&q=80",
-          "description": "Soporte lumbar dinámico con ajustes independientes en altura y reclinación.",
-          "features": [
-            "Malla transpirable",
-            "Reposacabezas ajustable",
-            "Ruedas silenciosas de PU"
-          ]
+          "id": "cabo",
+          "name": "Cabo",
+          "image": "assets/secadores/cabo.png",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "oficina-2",
-          "name": "Escritorio Regulable Eléctrico",
-          "image": "https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=1080&q=80",
-          "description": "Pasa de posición sentado a de pie con memoria para cuatro alturas.",
-          "features": [
-            "Motor silencioso doble",
-            "Sistema anticolisión",
-            "Acabado melamínico antihuellas"
-          ]
+          "id": "secador-blanco",
+          "name": "Secador blanco",
+          "image": "assets/secadores/secador blanco.png",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "oficina-3",
-          "name": "Lámpara Led Inteligente",
-          "image": "https://images.unsplash.com/photo-1582719478250-ffd31bfb1fa7?auto=format&fit=crop&w=1080&q=80",
-          "description": "Iluminación regulable con control táctil y carga inalámbrica integrada.",
-          "features": [
-            "Temperatura de color ajustable",
-            "Puerto USB adicional",
-            "Modo noche automático"
-          ]
+          "id": "secador-negro",
+          "name": "Secador negro",
+          "image": "assets/secadores/secador negro.png",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "oficina-4",
-          "name": "Panel Acústico Decorativo",
-          "image": "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=1080&q=80",
-          "description": "Reduce la reverberación en salas de reuniones sin sacrificar diseño.",
-          "features": [
-            "Instalación modular",
-            "Material ignífugo",
-            "Colores personalizables"
-          ]
+          "id": "secador-plastico",
+          "name": "Secador plastico",
+          "image": "assets/secadores/secador plastico.png",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "oficina-5",
-          "name": "Kit de Videoconferencia 4K",
-          "image": "https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=1080&q=80",
-          "description": "Incluye cámara panorámica, altavoz omnidireccional y control remoto.",
-          "features": [
-            "Cancelación activa de ruido",
-            "Conectividad plug & play",
-            "Compatibilidad multiplataforma"
-          ]
+          "id": "secador-rojo",
+          "name": "Secador rojo",
+          "image": "assets/secadores/secador rojo.png",
+          "description": "Pronto tendrás más información aquí."
         }
       ]
     },
     {
-      "id": "logistica",
-      "name": "Línea de Logística y Almacenaje",
-      "coverImage": "https://images.unsplash.com/photo-1592813630413-1124aa7955eb?auto=format&fit=crop&w=1080&q=80",
-      "shortDescription": "Organización eficiente para optimizar cada metro cuadrado del depósito.",
+      "id": "Trapos",
+      "name": "Trapos",
+      "coverImage": "assets/trapos/rejilla americana.png",
       "products": [
         {
-          "id": "logistica-1",
-          "name": "Carro Plataforma Plegable",
-          "image": "https://images.unsplash.com/photo-1580894906472-d9190cc172b0?auto=format&fit=crop&w=1080&q=80",
-          "description": "Estructura reforzada que soporta hasta 350 kg con ruedas silenciosas.",
-          "features": [
-            "Manija abatible",
-            "Cubierta antideslizante",
-            "Ruedas de giro 360°"
-          ]
+          "id": "rejilla-americana",
+          "name": "Rejilla americana",
+          "image": "assets/trapos/rejilla americana.png",
+          "description": "Pronto tendrás más información aquí."
         },
         {
-          "id": "logistica-2",
-          "name": "Organizador Modular Apilable",
-          "image": "https://images.unsplash.com/photo-1616628182507-c3e8b3d13052?auto=format&fit=crop&w=1080&q=80",
-          "description": "Bandejas transparentes para clasificar piezas y repuestos de forma rápida.",
-          "features": [
-            "Sistema de cierre seguro",
-            "Etiquetas intercambiables",
-            "Fabricado en policarbonato"
-          ]
-        },
-        {
-          "id": "logistica-3",
-          "name": "Estantería Heavy Duty",
-          "image": "https://images.unsplash.com/photo-1578574577315-3fbeb0cecdc2?auto=format&fit=crop&w=1080&q=80",
-          "description": "Soporta cargas de hasta 800 kg por nivel con acabado anticorrosivo.",
-          "features": [
-            "Montaje sin herramientas",
-            "Altura regulable",
-            "Refuerzos transversales"
-          ]
-        },
-        {
-          "id": "logistica-4",
-          "name": "Sistema de Picking Dinámico",
-          "image": "https://images.unsplash.com/photo-1520607162513-142993b0693b?auto=format&fit=crop&w=1080&q=80",
-          "description": "Canales inclinados que aceleran la preparación de pedidos con reposición frontal.",
-          "features": [
-            "Rodillos de alta resistencia",
-            "Configuración escalable",
-            "Indicadores visuales integrados"
-          ]
-        },
-        {
-          "id": "logistica-5",
-          "name": "Embaladora Retráctil",
-          "image": "https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=1080&q=80",
-          "description": "Sella y protege mercadería con envoltura térmica de manera uniforme.",
-          "features": [
-            "Panel digital intuitivo",
-            "Ahorro de hasta 30% en film",
-            "Incluye mesa de apoyo"
-          ]
+          "id": "trapo-de-piso-costurado-gris",
+          "name": "Trapo de piso costurado gris",
+          "image": "assets/trapos/trapo de piso costurado gris.png",
+          "description": "Pronto tendrás más información aquí."
         }
       ]
     }
