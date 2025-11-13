@@ -1,8 +1,7 @@
 import { Button } from "./ui/button";
 import { MessageCircle, ChevronDown } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
-import { envConfig } from "../config/env";
-import Heroimage from  "../assets/hero-background.jpeg";
+import Heroimage from "../assets/hero-background.jpeg";
 
 const sanitizePhoneNumber = (value: string | undefined) =>
   value?.replace(/[^0-9]/g, "") ?? "";
