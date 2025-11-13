@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Building2 } from "lucide-react";
+import { Mail, Phone, MapPin } from "lucide-react";
 import { Card, CardContent } from "./ui/card";
 import ASCARlogo from "../assets/ASCAlogo.jpeg";
 
@@ -6,7 +6,6 @@ const sanitizePhoneNumber = (value: string | undefined) =>
   value?.replace(/[^0-9+]/g, "") ?? "";
 
 export function Contact() {
-  const companyName = import.meta.env.VITE_COMPANY_NAME || "Mi Empresa";
   const companyTagline =
     import.meta.env.VITE_COMPANY_TAGLINE ||
     "Tu socio de confianza en soluciones profesionales";

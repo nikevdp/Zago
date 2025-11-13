@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { envConfig } from "../config/env";
 import ASCARlogo from "../assets/ASCAlogo.jpeg";
 
 const navItems = [
