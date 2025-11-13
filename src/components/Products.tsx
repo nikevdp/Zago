@@ -17,6 +17,7 @@ const EXTERNAL_IMAGE_REGEX = /^(https?:)?\/\//i;
 
 const CATEGORY_ASSET_FOLDERS: Record<string, string> = {
   Alfombras: "alfombras",
+  Escobillones: "escobillones",
   "Secadores de Piso": "secadores",
   Sopapas: "sopapas",
   "Plásticos": "plasticos",
