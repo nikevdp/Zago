@@ -3,11 +3,20 @@ import { MessageCircle, ChevronDown } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 import Heroimage from "../assets/hero-background.jpeg";
 
+const sanitizePhoneNumber = (value: string | undefined) =>
+  value?.replace(/[^0-9]/g, "") ?? "";
+
 export function Hero() {
+  const whatsappNumber =
+    sanitizePhoneNumber(import.meta.env.VITE_WHATSAPP_PHONE) || "1234567890";
+  const whatsappMessage =
+    import.meta.env.VITE_WHATSAPP_MESSAGE ||
+    "Hola, me gustaría obtener más información";
 
   const handleWhatsAppClick = () => {
+    if (!whatsappNumber) return;
     window.open(
-      "https://wa.me/+1170284317?text=Hola, me gustaría obtener más información",
+      `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`,
       "_blank"
     );
   };
