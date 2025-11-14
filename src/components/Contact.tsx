@@ -8,7 +8,7 @@ const sanitizePhoneNumber = (value: string | undefined) =>
 export function Contact() {
   const companyTagline =
     import.meta.env.VITE_COMPANY_TAGLINE ||
-    "Tu socio de confianza en soluciones profesionales";
+    "Nuestra cartera con mas de 500 clientes por todo el pais nos avala";
   const companyEmail =
     import.meta.env.VITE_COMPANY_EMAIL || "contacto@miempresa.com";
   const companyPhoneDisplay =

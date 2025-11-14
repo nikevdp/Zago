@@ -50,10 +50,10 @@ export function Hero() {
       {/* Contenido */}
       <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-4">
         <h1 className="text-white mb-6 max-w-4xl">
-          Soluciones Profesionales Para Tu Negocio
+          ASCAR - Industria del caucho y plastico
         </h1>
         <p className="text-white/90 mb-8 max-w-2xl">
-          Ofrecemos productos y servicios de la más alta calidad para impulsar tu empresa al siguiente nivel
+          Nuestra cartera con mas de 500 clientes por todo el pais nos avala
         </p>
         <div className="flex flex-col sm:flex-row gap-4">
           <Button
