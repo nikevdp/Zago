@@ -13,7 +13,10 @@ export default function App() {
 
   const handleWhatsAppClick = () => {
     if (!whatsappNumber) return;
-    window.open(`https://wa.me/${whatsappNumber}`, "_blank");
+    window.open(
+      "https://wa.me/+1170284317?text=Hola, me gustaría obtener más información",
+      "_blank"
+    );
   };
 
   return (
